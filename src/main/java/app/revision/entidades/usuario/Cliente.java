@@ -1,9 +1,14 @@
-package app.revision.entidades;
+package app.revision.entidades.usuario;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import app.revision.entidades.carrinho.Order;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -29,6 +34,15 @@ public class Cliente {
 
     @Column(length = 100)
     private String email;
+
+    @OneToMany(mappedBy = "cliente")
+    private Set<Cartao> cartoes = new HashSet<>();
+
+    @OneToMany(mappedBy = "cliente")
+    private Set<Endereco> enderecos = new HashSet<>();
+
+    @OneToMany(mappedBy = "cliente")
+    private Set<Order> orders = new HashSet<>();
 
     public Cliente(String senha, String nome, String datanasc, String gen, String email) {
         this.senha = senha;
@@ -87,6 +101,30 @@ public class Cliente {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Set<Cartao> getCartoes() {
+        return cartoes;
+    }
+
+    public void setCartoes(Set<Cartao> cartoes) {
+        this.cartoes = cartoes;
+    }
+
+    public Set<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(Set<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
     }
 
 }
