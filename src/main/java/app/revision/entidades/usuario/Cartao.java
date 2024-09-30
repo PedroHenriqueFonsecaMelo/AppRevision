@@ -1,11 +1,16 @@
 package app.revision.entidades.usuario;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import app.revision.entidades.carrinho.OrderCartoes;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -35,6 +40,9 @@ public class Cartao {
 
     @Column
     private Boolean preferencial;
+
+    @OneToMany(mappedBy = "cartoes")
+    private Set<OrderCartoes> order_cartao = new HashSet<OrderCartoes>();
 
     public int getNumber_cartao() {
         return number_cartao;
@@ -90,6 +98,14 @@ public class Cartao {
 
     public void setNome_cliente(String nome_cliente) {
         this.nome_cliente = nome_cliente;
+    }
+
+    public Set<OrderCartoes> getOrder_cartao() {
+        return order_cartao;
+    }
+
+    public void setOrder_cartao(Set<OrderCartoes> order_cartao) {
+        this.order_cartao = order_cartao;
     }
 
 }

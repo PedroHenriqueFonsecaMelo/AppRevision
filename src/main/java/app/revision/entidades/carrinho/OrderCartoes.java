@@ -1,9 +1,12 @@
 package app.revision.entidades.carrinho;
 
+import app.revision.entidades.usuario.Cartao;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -15,9 +18,13 @@ public class OrderCartoes {
     @Column(name = "order_cartoes_id")
     private int id;
 
+    @ManyToOne
+    @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 
-    private int cartoes;
+    @ManyToOne
+    @JoinColumn(name = "cartao_id")
+    private Cartao cartoes;
 
     private int vezes;
 
@@ -30,14 +37,6 @@ public class OrderCartoes {
 
     public void setOrder(Order order) {
         this.order = order;
-    }
-
-    public int getCartoes() {
-        return cartoes;
-    }
-
-    public void setCartoes(int cartoes) {
-        this.cartoes = cartoes;
     }
 
     public int getVezes() {
@@ -54,6 +53,14 @@ public class OrderCartoes {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public Cartao getCartoes() {
+        return cartoes;
+    }
+
+    public void setCartoes(Cartao cartoes) {
+        this.cartoes = cartoes;
     }
 
 }
