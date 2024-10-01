@@ -1,9 +1,9 @@
-package app.revision.entidades.carrinho;
+package app.revision.dao.entidades.carrinho;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import app.revision.entidades.usuario.Cliente;
+import app.revision.dao.entidades.usuario.Cliente;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

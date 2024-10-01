@@ -1,6 +1,6 @@
-package app.revision.entidades.carrinho;
+package app.revision.dao.entidades.carrinho;
 
-import app.revision.entidades.usuario.Cartao;
+import app.revision.dao.entidades.usuario.Cartao;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,12 +1,12 @@
-package app.revision.DTOs.carrinhoDTOs;
+package app.revision.dto.carrinho;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import app.revision.entidades.carrinho.OrderDetails;
-import app.revision.repository.EntidadesRepository.CarrinhoRepository.OrderDetailsRepository;
+import app.revision.dao.entidades.carrinho.OrderDetails;
+import app.revision.dao.repository.carrinho.OrderDetailsRepository;
 
 @Service
 public class OrderDetailsServico {

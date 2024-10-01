@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import app.revision.entidades.usuario.Cliente;
-import app.revision.entidades.usuario.Endereco;
-import app.revision.repository.EntidadesRepository.UsuarioRepository.ClienteRepository;
-import app.revision.repository.EntidadesRepository.UsuarioRepository.EnderecoRepository;
+import app.revision.dao.entidades.usuario.Cliente;
+import app.revision.dao.entidades.usuario.Endereco;
+import app.revision.dao.repository.usuario.ClienteRepository;
+import app.revision.dao.repository.usuario.EnderecoRepository;
 
 @Controller
 @RequestMapping("/home")

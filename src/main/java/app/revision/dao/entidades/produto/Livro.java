@@ -1,9 +1,9 @@
-package app.revision.entidades.produto;
+package app.revision.dao.entidades.produto;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import app.revision.entidades.carrinho.OrderDetails;
+import app.revision.dao.entidades.carrinho.OrderDetails;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

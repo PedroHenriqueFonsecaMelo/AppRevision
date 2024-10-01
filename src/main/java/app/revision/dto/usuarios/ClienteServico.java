@@ -1,12 +1,12 @@
-package app.revision.DTOs.usuariosDTOs;
+package app.revision.dto.usuarios;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import app.revision.entidades.usuario.Cliente;
-import app.revision.repository.EntidadesRepository.UsuarioRepository.ClienteRepository;
+import app.revision.dao.entidades.usuario.Cliente;
+import app.revision.dao.repository.usuario.ClienteRepository;
 
 @Service
 public class ClienteServico {

@@ -1,12 +1,12 @@
-package app.revision.DTOs.usuariosDTOs;
+package app.revision.dto.usuarios;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import app.revision.entidades.usuario.Cartao;
-import app.revision.repository.EntidadesRepository.UsuarioRepository.CartaoRepository;
+import app.revision.dao.entidades.usuario.Cartao;
+import app.revision.dao.repository.usuario.CartaoRepository;
 
 @Service
 public class CartaoServico {

@@ -1,4 +1,4 @@
-package app.revision.entidades.usuario;
+package app.revision.dao.entidades.usuario;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
