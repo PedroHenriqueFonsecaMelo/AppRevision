@@ -5,8 +5,9 @@
       <meta charset="utf-8">
       <title>Multi Step Form | CodingNepal</title>
       <link rel="stylesheet" href="/ClienteResources/SingUp.css">
-     
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
    </head>
    <body>
       <div class="container">
@@ -14,7 +15,7 @@
          <div class="progress-bar">
             <div class="step">
                <p>
-                  Name
+                  Basic Info
                </p>
                <div class="bullet">
                   <span>1</span>
@@ -23,7 +24,7 @@
             </div>
             <div class="step">
                <p>
-                  Contact
+                  Adress Info
                </p>
                <div class="bullet">
                   <span>2</span>
@@ -32,22 +33,14 @@
             </div>
             <div class="step">
                <p>
-                  Birth
+                  Cartão Info
                </p>
                <div class="bullet">
                   <span>3</span>
                </div>
                <div class="check fas fa-check"></div>
             </div>
-            <div class="step">
-               <p>
-                  Submit
-               </p>
-               <div class="bullet">
-                  <span>4</span>
-               </div>
-               <div class="check fas fa-check"></div>
-            </div>
+
          </div>
          <div class="form-outer">
             <form action="#">
@@ -55,84 +48,144 @@
                   <div class="title">
                      Basic Info:
                   </div>
-                  <div class="field">
-                     <div class="label">
-                        First Name
+                  <div class="field grid">
+                     <div>
+                        <div class="label">
+                           Nome
+                        </div>
+                        <input type="text" name="nome" id="nome"
+                           placeholder="Insira seu nome" value>
                      </div>
-                     <input type="text">
+                     <div>
+                        <div class="label">
+                           Data de Nascimento
+                        </div>
+                        <input type="text" name="datanasc" id="datanasc"
+                           placeholder="Insira sua data de nascimento" value>
+                     </div>
+                  </div>
+
+                  <div class="field grid">
+                     <div>
+                        <div class="label">
+                           E-mail
+                        </div>
+                        <input type="email" name="email" id="email"
+                           placeholder="Insira seu e-mail" value>
+                     </div>
+                     <div>
+                        <div class="label">
+                           Senha
+                        </div>
+                        <input type="password" name="senha" id="senha"
+                           placeholder="Crie uma senha" value>
+                     </div>
                   </div>
                   <div class="field">
                      <div class="label">
-                        Last Name
+                        Gênero
                      </div>
-                     <input type="text">
+                     <select name="gen" id="gen">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outro</option>
+                     </select>
                   </div>
                   <div class="field">
                      <button class="firstNext next">Next</button>
                   </div>
                </div>
+
                <div class="page">
                   <div class="title">
-                     Contact Info:
+                     Adress Info:
                   </div>
-                  <div class="field">
-                     <div class="label">
-                        Email Address
+
+                  <div class="field grid2">
+                     <div>
+                        <div class="label" for="pais">País</div>
+                        <input type="text" id="pais" name="pais" />
                      </div>
-                     <input type="text">
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        Phone Number
+                     <div>
+                        <div class="label" for="cep">CEP</div>
+                        <input type="text" id="cep" name="cep" />
                      </div>
-                     <input type="Number">
+                     <div>
+                        <div class="label" for="estado">Estado</div>
+                        <input type="text" id="estado" name="estado" />
+                     </div>
                   </div>
+
+                  <div class="field grid2">
+                     <div>
+                        <div class="label" for="cidade">Cidade</div>
+                        <input type="text" id="cidade" name="cidade" />
+                     </div>
+                     <div>
+                        <div class="label" for="bairro">Bairro</div>
+                        <input type="text" id="bairro" name="bairro" />
+                     </div>
+                     <div>
+                        <div class="label" for="rua">Rua</div>
+                        <input type="text" id="rua" name="rua" />
+                     </div>
+                  </div>
+
+                  <div class="field grid2">
+                     
+                     <div>
+                        <div class="label" for="numero">Número</div>
+                        <input type="number" id="numero" name="numero" />
+                     </div>
+                     <div>
+                        <div class="label" for="complemento">Complemento</div>
+                        <input type="text" id="complemento"
+                           name="complemento" />
+                     </div>
+                     <div>
+                        <div class="label" for="tipo_residencia">Tipo de
+                           Residência</div>
+                        <input type="text" id="tipo_residencia"
+                           name="tipo_residencia" />
+                     </div>
+                  </div>
+
                   <div class="field btns">
                      <button class="prev-1 prev">Previous</button>
                      <button class="next-1 next">Next</button>
                   </div>
                </div>
+
+
                <div class="page">
                   <div class="title">
-                     Date of Birth:
+                     Cartão Info:
                   </div>
-                  <div class="field">
-                     <div class="label">
-                        Date
+                  <div class="field grid">
+                     <div>
+                        <div class="label" for="number_cartao">Número do Cartão</div>
+                        <input type="number" id="number_cartao"
+                           name="number_cartao" />
                      </div>
-                     <input type="text">
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        Gender
+                     <div >
+                        <div class="label" for="bandeira">Bandeira</div>
+                        <input type="text" id="bandeira" name="bandeira" />
                      </div>
-                     <select>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                     </select>
                   </div>
-                  <div class="field btns">
-                     <button class="prev-2 prev">Previous</button>
-                     <button class="next-2 next">Next</button>
-                  </div>
-               </div>
-               <div class="page">
-                  <div class="title">
-                     Login Details:
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        Username
+                  <div class="field grid">
+                     <div >
+                        <div class="label" for="cv">CV</div>
+                        <input type="number" id="cv" name="cv" />
                      </div>
-                     <input type="text">
-                  </div>
-                  <div class="field">
-                     <div class="label">
-                        Password
+                     <div>
+                        <div class="label" for="preferencial">Cartão Preferencial</div>
+                        <select id="preferencial" name="preferencial">
+                           <option value="true">Sim</option>
+                           <option value="false">Não</option>
+                        </select>
                      </div>
-                     <input type="password">
                   </div>
+
                   <div class="field btns">
                      <button class="prev-3 prev">Previous</button>
                      <button class="submit">Submit</button>
@@ -142,5 +195,6 @@
          </div>
       </div>
       <script src="../ClienteResources/SingUp.js"></script>
+      <script src="../ClienteResources/CEP.js"></script>
    </body>
 </html>
