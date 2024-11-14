@@ -48,6 +48,20 @@ public class Endereco {
     @Column(length = 100)
     private String tipo_residencia;
 
+    public Endereco(Cliente cliente, String pais, String cep, String estado, String cidade, String rua,
+            String bairro, int numero, String complemento, String tipo_residencia) {
+
+        this.pais = pais;
+        this.cep = cep;
+        this.estado = estado;
+        this.cidade = cidade;
+        this.rua = rua;
+        this.bairro = bairro;
+        this.numero = numero;
+        this.complemento = complemento;
+        this.tipo_residencia = tipo_residencia;
+    }
+
     public Cliente getCliente() {
         return cliente;
     }

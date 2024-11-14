@@ -23,7 +23,7 @@ public class Cartao {
     private int id;
 
     @Column
-    private int number_cartao;
+    private long number_cartao;
 
     @Column(length = 100)
     private String bandeira;
@@ -44,11 +44,21 @@ public class Cartao {
     @OneToMany(mappedBy = "cartoes")
     private Set<OrderCartoes> order_cartao = new HashSet<OrderCartoes>();
 
-    public int getNumber_cartao() {
+    public Cartao(Cliente cliente, long number_cartao, String bandeira, int cv,
+            Boolean preferencial) {
+        this.number_cartao = number_cartao;
+        this.bandeira = bandeira;
+
+        this.cliente = cliente;
+        this.cv = cv;
+        this.preferencial = preferencial;
+    }
+
+    public long getNumber_cartao() {
         return number_cartao;
     }
 
-    public void setNumber_cartao(int number_cartao) {
+    public void setNumber_cartao(long number_cartao) {
         this.number_cartao = number_cartao;
     }
 
