@@ -1,0 +1,477 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+Freebie Interactive Flat Design UI / Only HTML5 & CSS3 by Javier Latorre López-Villalta
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../ClienteResources/Home/Home.css" />
+        <title>Browser</title>
+        <!--<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.material.mobile.min.css" /> -->
+
+        <link rel="stylesheet"
+            href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common.min.css" />
+        <link rel="stylesheet"
+            href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.bootstrap.min.css" />
+
+        <script
+            src="https://kendo.cdn.telerik.com/2018.3.1017/js/jquery.min.js"></script>
+        <script
+            src="https://kendo.cdn.telerik.com/2018.3.1017/js/angular.min.js"></script>
+        <script
+            src="https://kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="main-container">
+
+            <!-- HEADER -->
+            <header class="block">
+                <ul class="header-menu horizontal-list">
+                    <li>
+                        <a class="header-menu-tab" href="#1"><span
+                                class="icon entypo-cog scnd-font-color"></span>Settings</a>
+                    </li>
+                    <li>
+                        <a class="header-menu-tab" href="#2"><span
+                                class="icon fontawesome-user scnd-font-color"></span>Account</a>
+                    </li>
+                    <li>
+                        <a class="header-menu-tab" href="#3"><span
+                                class="icon fontawesome-envelope scnd-font-color"></span>Messages</a>
+                        <a class="header-menu-number" href="#4">5</a>
+                    </li>
+                    <li>
+                        <a class="header-menu-tab" href="#5"><span
+                                class="icon fontawesome-star-empty scnd-font-color"></span>Favorites</a>
+                    </li>
+                </ul>
+                <div class="profile-menu">
+                    <p>Me <a href="#26"><span
+                                class="entypo-down-open scnd-font-color"></span></a></p>
+                    <div class="profile-picture small-profile-picture">
+                        <img width="40px" alt="Anne Hathaway picture"
+                            src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+                    </div>
+                </div>
+            </header>
+
+            <!-- LEFT-CONTAINER -->
+            <div class="left-container container">
+                <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
+                    <a class="add-button" href="#28"><span
+                            class="icon entypo-plus scnd-font-color"></span></a>
+                    <div class="profile-picture big-profile-picture clear">
+                        <img width="150px" alt="Anne Hathaway picture"
+                            src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+                    </div>
+                    <h1 class="user-name">Anne Hathaway</h1>
+                    <div class="profile-description">
+                        <p class="scnd-font-color">Lorem ipsum dolor sit amet
+                            consectetuer adipiscing</p>
+                    </div>
+                    <ul class="profile-options horizontal-list">
+                        <li><a class="comments" href="#40"><p><span
+                                        class="icon fontawesome-comment-alt scnd-font-color"></span>23</li></p></a>
+                        <li><a class="views" href="#41"><p><span
+                                        class="icon fontawesome-eye-open scnd-font-color"></span>841</li></p></a>
+                        <li><a class="likes" href="#42"><p><span
+                                        class="icon fontawesome-heart-empty scnd-font-color"></span>49</li></p></a>
+                    </ul>
+                </div>
+                <div class="menu-box block"> <!-- MENU BOX (LEFT-CONTAINER) -->
+                    <h2 class="titular">MENU BOX</h2>
+                    <ul class="menu-box-menu">
+                        <li>
+                            <a class="menu-box-tab" href="#6"><span
+                                    class="icon fontawesome-envelope scnd-font-color"></span>Messages<div
+                                    class="menu-box-number">24</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#8"><span
+                                    class="icon entypo-paper-plane scnd-font-color"></span>Invites<div
+                                    class="menu-box-number">3</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#10"><span
+                                    class="icon entypo-calendar scnd-font-color"></span>Events<div
+                                    class="menu-box-number">5</div></a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#12"><span
+                                    class="icon entypo-cog scnd-font-color"></span>Account
+                                Settings</a>
+                        </li>
+                        <li>
+                            <a class="menu-box-tab" href="#13"><sapn
+                                    class="icon entypo-chart-line scnd-font-color"></sapn>Statistics</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="social horizontal-list block">
+                    <!-- SOCIAL (LEFT-CONTAINER) -->
+                    <li class="facebook"><p class="icon"><span
+                                class="zocial-facebook"></span></p><p
+                            class="number">248k</p></li>
+                    <li class="twitter"><p class="icon"><span
+                                class="zocial-twitter"></span></p><p
+                            class="number">30k</p></li>
+                    <li class="googleplus"><p class="icon"><span
+                                class="zocial-googleplus"></span></p><p
+                            class="number">124k</p></li>
+                    <li class="mailbox"><p class="icon"><span
+                                class="fontawesome-envelope"></span></p><p
+                            class="number">89k</p></li>
+                </ul>
+            </div>
+
+            <!-- MIDDLE-CONTAINER -->
+            <div class="middle-container container">
+                <div id="example" ng-app="KendoDemos">
+                    <div class="demo-section k-content">
+                        <div id="tabstrip">
+                            <ul>
+                                <li class="k-state-active">
+                                    User
+                                </li>
+                                <li>
+                                    Provider
+                                </li>
+                                <li>
+                                    Settings
+                                </li>
+                            </ul>
+                            <div>
+                                <h3
+                                    style="margin-top:0px;margin-bottom:0px;">Personal
+                                    Information</h3>
+                                <form class="k-form">
+                                    <div class="row">
+                                        <div class="item">
+                                            <span>First Name
+                                                <span
+                                                    class="k-required">*</span>
+                                            </span>
+                                            <br>
+                                            <input class="k-textbox"
+                                                placeholder="Doe" />
+                                        </div>
+                                        <div class="item">
+                                            <span>last Name
+                                                <span
+                                                    class="k-required">*</span>
+                                            </span>
+                                            <br>
+                                            <input class="k-textbox"
+                                                placeholder="Jane" />
+                                        </div>
+
+                                    </div>
+                                    <br />
+                                    <div style="clear:both;"></div>
+                                    <div class="row">
+                                        <div class="item">
+                                            <span>Email <span
+                                                    class="k-required">*</span></span>
+                                            <br>
+                                            <input class="k-textbox"
+                                                placeholder="jdoe@chartpad.com" />
+                                        </div>
+                                        <div class="item">
+                                            <span>SSN</span>
+                                            <br>
+                                            <input class="k-textbox"
+                                                kendo-masked-text-box
+                                                ng-model="ssn"
+                                                k-mask="'000-00-0000'" />
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;"></div>
+                                    <h3
+                                        style="margin-top:30px;margin-bottom:0px;">Account
+                                        Information</h3>
+                                    <div class="row">
+                                        <div class="item">
+                                            <span>Username <span
+                                                    class="k-required">*</span></span>
+                                            <br>
+                                            <input class="k-textbox"
+                                                placeholder="jdoe" />
+                                        </div>
+                                        <div class="item">
+                                            <span>Password <span
+                                                    class="k-required">*</span></span>
+                                            <br>
+                                            <input class="k-textbox"
+                                                placeholder="jdoe" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="item"
+                                            style="padding-top:30px;">
+                                            <input type="checkbox"
+                                                id="IntegratedAuth"
+                                                ng-model="IntegratedAuth"
+                                                ng-bind="IntegratedAuth"
+                                                class="k-checkbox" />
+                                            <label class="k-checkbox-label"
+                                                for="IntegratedAuth">Integrated
+                                                Authentication</label>
+                                        </div>
+                                        <div class="item"
+                                            style="padding-top:24px;">
+                                            <button
+                                                class="k-button k-primary"
+                                                ng-disabled="IntegratedAuth">Update
+                                                Password</button>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;">
+                                    </div>
+                                </form>
+                            </div>
+                            <div>
+                                <h3
+                                    style="margin-top:0px;margin-bottom:0px;">Provider
+                                    Information&nbsp;&nbsp;<a href="#"><span
+                                            class="k-icon k-i-search"></span></a></h3>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox" id="isProvider"
+                                            class="k-checkbox" checked
+                                            ng-model="isProvider" />
+                                        <label class="k-checkbox-label"
+                                            for="isProvider">Provider</label>
+                                    </div>
+                                    <div class="item">
+                                        <span>Provider ID</span>
+                                        <input class="k-textbox"
+                                            ng-disabled="!isProvider" />
+                                    </div>
+                                    <div class="item">
+                                        <span>NPI</span>
+                                        <input class="k-textbox"
+                                            ng-disabled="!isProvider" />
+                                    </div>
+                                </div>
+                                <div style="clear:both"></div>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isBillingProvider"
+                                            class="k-checkbox"
+                                            ng-model="isBillingProvider"
+                                            ng-disabled="!isProvider" />
+                                        <label class="k-checkbox-label"
+                                            for="isBillingProvider">Billing
+                                            Provider</label>
+                                    </div>
+                                    <div class="item">
+                                        <span>Billing Provider ID</span>
+                                        <input class="k-textbox"
+                                            ng-disabled="!isBillingProvider" />
+                                    </div>
+                                </div>
+                                <div style="clear:both"></div>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isOrderingProvider"
+                                            class="k-checkbox"
+                                            ng-disabled="!isProvider" />
+                                        <label class="k-checkbox-label"
+                                            for="isOrderingProvider">Ordering
+                                            Provider</label>
+                                    </div>
+                                </div>
+                                <div style="clear:both"></div>
+                                <h3
+                                    style="margin-top:30px;margin-bottom:10px;">Credentials&nbsp;<a
+                                        href="#"><span
+                                            class="k-icon k-i-gear"></span></a></h3>
+                                <div class="row">
+                                    <div class="verylongitem">
+                                        <select id="Credentials"
+                                            ng-model="Credentials"
+                                            multiple="multiple"
+                                            data-placeholder="Select credentials...">
+                                            <option>ANP-C</option>
+                                            <option>CNA</option>
+                                            <option>CRNA</option>
+                                            <option>CSA</option>
+                                            <option>DMD</option>
+                                            <option>MA</option>
+                                            <option>NS</option>
+                                            <option>OD</option>
+                                            <option>OTR</option>
+                                            <option>RT</option>
+                                            <option>RTP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <h3
+                                    style="margin-top:30px;margin-bottom:10px;">Medical
+                                    Licenses</h3>
+                                <div class="row">
+                                    <div class="verylongitem">
+                                        <div id="MedicalLicenses"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h3
+                                    style="margin-top:0px;margin-bottom:0px;">Speech</h3>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isSpeechEnabled"
+                                            class="k-checkbox"
+                                            ng-model="isSpeechEnabled" />
+                                        <label class="k-checkbox-label"
+                                            for="isSpeechEnabled">Speech
+                                            Enabled</label>
+                                    </div>
+                                    <div class="item">
+                                        <span>Speech Username</span>
+                                        <input class="k-textbox"
+                                            placeholder="jdoe"
+                                            ng-disabled="!isSpeechEnabled" />
+                                    </div>
+                                    <div class="item">
+                                        <span>Speech License</span>
+                                        <select kendo-drop-down-list
+                                            style="width: 100%;"
+                                            ng-disabled="!isSpeechEnabled">
+                                            <option>License A</option>
+                                            <option>License B</option>
+                                            <option>License C</option>
+                                            <option>License D</option>
+                                            <option>License E</option>
+                                            <option>License F</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--<div style="clear:both"></div>-->
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isVirtualAssistantEnabled"
+                                            class="k-checkbox"
+                                            ng-model="isVirtualAssistantEnabled" />
+                                        <label class="k-checkbox-label"
+                                            for="isVirtualAssistantEnabled">Speech
+                                            Virtual Assistant</label>
+                                    </div>
+                                </div>
+                                <div style="clear:both"></div>
+                                <h3
+                                    style="margin-top:30px;margin-bottom:0px;">Misc.</h3>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox" id="isCLU"
+                                            class="k-checkbox"
+                                            ng-model="isCLU" />
+                                        <label class="k-checkbox-label"
+                                            for="isCLU">Clinical Learning
+                                            Understanding</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isExemptAuthor"
+                                            class="k-checkbox"
+                                            ng-model="isExemptAuthor" />
+                                        <label class="k-checkbox-label"
+                                            for="isExemptAuthor">Exempt
+                                            Author</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isAuthorizedBiller"
+                                            class="k-checkbox"
+                                            ng-model="isAuthorizedBiller" />
+                                        <label class="k-checkbox-label"
+                                            for="isAuthorizedBiller">Authorized
+                                            Biller</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox" id="isAssignable"
+                                            class="k-checkbox"
+                                            ng-model="isAssignable" />
+                                        <label class="k-checkbox-label"
+                                            for="isAssignable">Is
+                                            Assignable</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isSchedulable"
+                                            class="k-checkbox"
+                                            ng-model="isSchedulable" />
+                                        <label class="k-checkbox-label"
+                                            for="isSchedulable">Is
+                                            Schedulable</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isViewInvalidVisits"
+                                            class="k-checkbox"
+                                            ng-model="isViewInvalidVisits" />
+                                        <label class="k-checkbox-label"
+                                            for="isViewInvalidVisits">View
+                                            Invalid Visits</label>
+                                    </div>
+                                </div>
+                                <div style="clear:both"></div>
+                                <div class="row">
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isFaxDirectMessage"
+                                            class="k-checkbox"
+                                            ng-model="isFaxDirectMessage" />
+                                        <label class="k-checkbox-label"
+                                            for="isFaxDirectMessage">Fax/Direct
+                                            Messaging</label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox"
+                                            id="isFaxDirectMessageAdmin"
+                                            class="k-checkbox"
+                                            ng-model="isFaxDirectMessageAdmin" />
+                                        <label class="k-checkbox-label"
+                                            for="isFaxDirectMessageAdmin">Fax/Direct
+                                            Messaging Admin</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT-CONTAINER -->
+            <div class="right-container container">
+                <div class="loading block"> <!-- LOADING (RIGHT-CONTAINER) -->
+                    <div class="progress-bar downloading"></div>
+                    <p><span
+                            class="icon fontawesome-cloud-download scnd-font-color"></span>Downloading...</p>
+                    <p class="percentage">81<sup>%</sup></p>
+                    <div class="progress-bar uploading"></div>
+                    <p><span
+                            class="icon fontawesome-cloud-upload scnd-font-color"></span>Uploading...</p>
+                    <p class="percentage">43<sup>%</sup></p>
+                </div>
+
+            </div> <!-- end right-container -->
+        </div> <!-- end main-container -->
+        <script src="../ClienteResources/Home/Info.js"></script>
+    </body>
+</html>

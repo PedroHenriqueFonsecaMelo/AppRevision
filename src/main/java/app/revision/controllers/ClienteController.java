@@ -39,6 +39,12 @@ public class ClienteController {
         return "ClienteHTML/SingUp";
     }
 
+    @GetMapping("/home")
+    public String UserHome(Model model) {
+
+        return "ClienteHTML/UserHome";
+    }
+
     @PostMapping("/submitCliForm")
     public ResponseEntity<String> submitForm(@ModelAttribute ClienteFormData formData) {
 
