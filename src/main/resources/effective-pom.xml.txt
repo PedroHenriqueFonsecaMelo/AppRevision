@@ -6062,7 +6062,7 @@
       </dependency>
       <dependency>
         <groupId>org.apache.pulsar</groupId>
-        <artifactId>docker-images</artifactId>
+        <artifactId>docker-../indexHTML/images</artifactId>
         <version>3.2.4</version>
       </dependency>
       <dependency>
@@ -8008,7 +8008,7 @@
               </goals>
               <configuration>
                 <projectType>application</projectType>
-                <outputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\classes/META-INF/sbom</outputDirectory>
+                
                 <outputFormat>json</outputFormat>
                 <outputName>application.cdx</outputName>
               </configuration>
