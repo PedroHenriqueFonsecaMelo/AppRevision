@@ -50,7 +50,8 @@ public class Endereco {
 
     public Endereco(Cliente cliente, String pais, String cep, String estado, String cidade, String rua,
             String bairro, int numero, String complemento, String tipo_residencia) {
-
+        
+        this.cliente = cliente;
         this.pais = pais;
         this.cep = cep;
         this.estado = estado;
@@ -148,6 +149,13 @@ public class Endereco {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Endereco [id=" + id + ", cliente=" + cliente + ", pais=" + pais + ", cep=" + cep + ", estado=" + estado
+                + ", cidade=" + cidade + ", rua=" + rua + ", bairro=" + bairro + ", numero=" + numero + ", complemento="
+                + complemento + ", tipo_residencia=" + tipo_residencia + "]";
     }
 
 }

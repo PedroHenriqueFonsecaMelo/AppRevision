@@ -16,6 +16,7 @@ import app.revision.dao.entidades.usuario.Endereco;
 import app.revision.dao.repository.usuario.CartaoRepository;
 import app.revision.dao.repository.usuario.ClienteRepository;
 import app.revision.dao.repository.usuario.EnderecoRepository;
+import jakarta.transaction.Transactional;
 
 @Controller
 @RequestMapping("/usu")
@@ -45,6 +46,7 @@ public class ClienteController {
         return "ClienteHTML/UserHome";
     }
 
+    @Transactional
     @PostMapping("/submitCliForm")
     public ResponseEntity<String> submitForm(@ModelAttribute ClienteFormData formData) {
 
@@ -57,11 +59,11 @@ public class ClienteController {
                 formData.getEmail());
 
         // Salvar Cliente no banco de dados
-        cliente = clienteRepository.save(cliente); // Salva o cliente e pega a entidade com ID gerado
+        cliente = clienteRepository.save(cliente);
 
         // Cria Endereco
         Endereco endereco = new Endereco(
-                cliente, // Associa o cliente ao endereço
+                cliente, 
                 formData.getPais(),
                 formData.getCep(),
                 formData.getEstado(),
@@ -72,20 +74,21 @@ public class ClienteController {
                 formData.getComplemento(),
                 formData.getTipo_residencia());
 
+
         // Salvar Endereço no banco de dados
-        enderecoRepository.save(endereco); // Salva o endereço
+        enderecoRepository.save(endereco);
 
         // Cria Cartão
         Cartao cartao = new Cartao(
-                cliente, // Associa o cliente ao cartão
+                cliente,
                 formData.getNumber_cartao(),
                 formData.getBandeira(),
                 formData.getCv(),
                 formData.isPreferencial());
 
         // Salvar Cartão no banco de dados
-        cartaoRepository.save(cartao); // Salva o cartão
+        cartaoRepository.save(cartao);
 
-        return ResponseEntity.ok("Formulário enviado com sucesso!");
+        return ResponseEntity.ok("Cliente " + cliente.getNome() + " e seus dados associados foram salvos com sucesso!");
     }
 }

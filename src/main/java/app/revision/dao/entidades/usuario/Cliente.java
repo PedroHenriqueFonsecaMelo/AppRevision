@@ -128,4 +128,22 @@ public class Cliente {
         this.orders = orders;
     }
 
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cliente{");
+        sb.append("id=").append(id);
+        sb.append(", senha=").append(senha);
+        sb.append(", nome=").append(nome);
+        sb.append(", datanasc=").append(datanasc);
+        sb.append(", gen=").append(gen);
+        sb.append(", email=").append(email);
+        sb.append(", cartoes=").append(cartoes);
+        sb.append(", enderecos=").append(enderecos);
+        sb.append(", orders=").append(orders);
+        sb.append('}');
+        return sb.toString();
+    }
+
 }

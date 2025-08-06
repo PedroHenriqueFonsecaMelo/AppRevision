@@ -118,4 +118,10 @@ public class Cartao {
         this.order_cartao = order_cartao;
     }
 
+    @Override
+    public String toString() {
+        return "Cartao [id=" + id + ", number_cartao=" + number_cartao + ", bandeira=" + bandeira + ", nome_cliente="
+                + nome_cliente + ", cliente=" + cliente + ", cv=" + cv + ", preferencial=" + preferencial
+                + ", order_cartao=" + order_cartao + "]";
+    }
 }

@@ -40,21 +40,20 @@ public class IndexController {
 
     @PostMapping("/submitForm")
     public String submitForm(@ModelAttribute CombinedUserForm combinedForm, Model model) {
-        // Aqui você pode acessar os dados dos objetos user e product
+
         Cliente user = combinedForm.getUser();
-        Endereco product = combinedForm.getEndereco();
+        Endereco ender = combinedForm.getEndereco();
 
-        // Processar os dados como necessário
-
+        // Atribuir objetos à pagina
         model.addAttribute("user", user);
-        model.addAttribute("endereco", product);
-        return "ClienteHTML/result"; // Nome do template para mostrar os resultados
+        model.addAttribute("endereco", ender);
+        return "ClienteHTML/result";
     }
 
     @GetMapping("/form")
     public String showForm(Model model) {
         model.addAttribute("CombinedUserForm", new CombinedUserForm());
-        return "ClienteHTML/form"; // Nome do template Thymeleaf
+        return "ClienteHTML/form";
     }
 
 }

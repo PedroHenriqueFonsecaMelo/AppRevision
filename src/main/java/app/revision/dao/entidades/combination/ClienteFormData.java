@@ -2,10 +2,11 @@ package app.revision.dao.entidades.combination;
 
 import lombok.Data;
 
+// Formulario de Login
 @Data
 public class ClienteFormData {
 
-    // cliente
+    // Cliente
     private String nome;
     private String senha;
     private String datanasc;

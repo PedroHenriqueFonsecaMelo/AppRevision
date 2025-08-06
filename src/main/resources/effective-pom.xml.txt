@@ -7958,15 +7958,15 @@
     </pluginRepository>
   </pluginRepositories>
   <build>
-    <sourceDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\src\main\java</sourceDirectory>
-    <scriptSourceDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\src\main\scripts</scriptSourceDirectory>
-    <testSourceDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\src\test\java</testSourceDirectory>
-    <outputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\classes</outputDirectory>
-    <testOutputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\test-classes</testOutputDirectory>
+    <sourceDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\src\main\java</sourceDirectory>
+    <scriptSourceDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\src\main\scripts</scriptSourceDirectory>
+    <testSourceDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\src\test\java</testSourceDirectory>
+    <outputDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\classes</outputDirectory>
+    <testOutputDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\test-classes</testOutputDirectory>
     <resources>
       <resource>
         <filtering>true</filtering>
-        <directory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\src\main\resources</directory>
+        <directory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\src\main\resources</directory>
         <includes>
           <include>**/application*.yml</include>
           <include>**/application*.yaml</include>
@@ -7974,7 +7974,7 @@
         </includes>
       </resource>
       <resource>
-        <directory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\src\main\resources</directory>
+        <directory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\src\main\resources</directory>
         <excludes>
           <exclude>**/application*.yml</exclude>
           <exclude>**/application*.yaml</exclude>
@@ -7984,10 +7984,10 @@
     </resources>
     <testResources>
       <testResource>
-        <directory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\src\test\resources</directory>
+        <directory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\src\test\resources</directory>
       </testResource>
     </testResources>
-    <directory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target</directory>
+    <directory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target</directory>
     <finalName>revision-0.0.1-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
@@ -8032,14 +8032,14 @@
               <configuration>
                 <verbose>true</verbose>
                 <generateGitPropertiesFile>true</generateGitPropertiesFile>
-                <generateGitPropertiesFilename>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\classes/git.properties</generateGitPropertiesFilename>
+                <generateGitPropertiesFilename>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\classes/git.properties</generateGitPropertiesFilename>
               </configuration>
             </execution>
           </executions>
           <configuration>
             <verbose>true</verbose>
             <generateGitPropertiesFile>true</generateGitPropertiesFile>
-            <generateGitPropertiesFilename>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\classes/git.properties</generateGitPropertiesFilename>
+            <generateGitPropertiesFilename>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\classes/git.properties</generateGitPropertiesFilename>
           </configuration>
         </plugin>
         <plugin>
@@ -8130,12 +8130,12 @@
                 <goal>verify</goal>
               </goals>
               <configuration>
-                <classesDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\classes</classesDirectory>
+                <classesDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\classes</classesDirectory>
               </configuration>
             </execution>
           </executions>
           <configuration>
-            <classesDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\classes</classesDirectory>
+            <classesDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\classes</classesDirectory>
           </configuration>
         </plugin>
         <plugin>
@@ -8484,7 +8484,7 @@
               <goal>site</goal>
             </goals>
             <configuration>
-              <outputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
+              <outputDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -8500,7 +8500,7 @@
               <goal>deploy</goal>
             </goals>
             <configuration>
-              <outputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
+              <outputDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -8511,7 +8511,7 @@
           </execution>
         </executions>
         <configuration>
-          <outputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
+          <outputDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
           <reportPlugins>
             <reportPlugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -8523,6 +8523,6 @@
     </plugins>
   </build>
   <reporting>
-    <outputDirectory>c:\Users\Pedro Henrique\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
+    <outputDirectory>c:\Users\" "\Documents\Organizar\Git Projetos\revision\target\site</outputDirectory>
   </reporting>
 </project>
