@@ -5,534 +5,401 @@ Freebie Interactive Flat Design UI / Only HTML5 & CSS3 by Javier Latorre López-
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../ClienteResources/Home/Home.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../ClienteResources/Home/Home.css" />
 
-        <!--<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common-material.min.css" />
+    <!--<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common-material.min.css" />
         <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.material.min.css" />
         <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.material.mobile.min.css" /> -->
 
-        <title>BookSaw - Free Book Store HTML CSS Template</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="author" content>
-        <meta name="keywords" content>
-        <meta name="description" content>
+    <title>BookSaw - Free Book Store HTML CSS Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content>
+    <meta name="keywords" content>
+    <meta name="description" content>
 
-        <!-- Seus arquivos de estilo locais -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-            crossorigin="anonymous">
+    <!-- Seus arquivos de estilo locais -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css"
-            href="../IndexResources/css/normalize.css">
-        <link rel="stylesheet" type="text/css"
-            href="../IndexResources/icomoon/icomoon.css">
-        <link rel="stylesheet" type="text/css"
-            href="../IndexResources/css/vendor.css">
-        <link rel="stylesheet" type="text/css"
-            href="../IndexResources/style.css">
+    <link rel="stylesheet" type="text/css" href="../IndexResources/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../IndexResources/icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="../IndexResources/css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="../IndexResources/style.css">
 
-        <!-- novos imports -->
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-            crossorigin="anonymous">
+    <!-- novos imports -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-        <!-- Estilos personalizados e bibliotecas -->
+    <!-- Estilos personalizados e bibliotecas -->
 
-        <!-- jQuery mais atual -->
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- jQuery mais atual -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-        <!-- DataTables estável -->
-        <link
-            href="https://cdn.datatables.net/2.3.0/css/dataTables.dataTables.css"
-            rel="stylesheet" type="text/css" />
-        <script
-            src="https://cdn.datatables.net/2.3.0/js/dataTables.js"></script>
+    <!-- DataTables estável -->
+    <link href="https://cdn.datatables.net/2.3.0/css/dataTables.dataTables.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.datatables.net/2.3.0/js/dataTables.js"></script>
 
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.css" />
-        <script type="text/javascript"
-            src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.js"></script>
-        <script src="./site.js.download"></script>
-        <script> table.destroy(); </script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.20/b-1.6.0/b-html5-1.6.0/datatables.min.js"></script>
+    <script src="./site.js.download"></script>
+    <script> table.destroy(); </script>
 
-    </head>
+</head>
 
-    <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-        <div id="header-wrap">
-            <div class="top-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i
-                                                class="icon icon-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i
-                                                class="icon icon-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i
-                                                class="icon icon-youtube-play"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i
-                                                class="icon icon-behance-square"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--social-links-->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="right-element">
-                                <a href="#" class="user-account for-buy"><i
-                                        class="icon icon-user"></i><span>Account</span></a>
-                                <a href="#" class="cart for-buy"><i
-                                        class="icon icon-clipboard"></i><span>Cart:(0$)</span></a>
-                                <div class="action-menu">
-                                    <div class="search-bar">
-                                        <a href="#"
-                                            class="search-button search-toggle"
-                                            data-selector="#header-wrap">
-                                            <i class="icon icon-search"></i>
-                                        </a>
-                                        <form role="search" method="get"
-                                            class="search-box">
-                                            <input
-                                                class="search-field text search-input"
-                                                placeholder="Search"
-                                                type="search">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--top-right-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--top-content-->
-
-            <header id="header">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="col-md-2">
-                            <div class="main-logo">
-                                <a href="index.html"><img
-                                        src="../IndexResources/images/main-logo.png"
-                                        alt="logo"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-10">
-                            <nav id="navbar">
-                                <div class="main-menu stellarnav">
-                                    <ul class="menu-list">
-                                        <li class="menu-item active"><a
-                                                href="#home">Home</a></li>
-                                        <li class="menu-item has-sub">
-                                            <a href="#pages"
-                                                class="nav-link">Pages</a>
-                                            <ul>
-                                                <li class="active"><a
-                                                        href="index.html">Home</a></li>
-                                                <li><a
-                                                        href="index.html">About</a></li>
-                                                <li><a
-                                                        href="index.html">Styles</a></li>
-                                                <li><a
-                                                        href="index.html">Blog</a></li>
-                                                <li><a
-                                                        href="index.html">Post
-                                                        Single</a></li>
-                                                <li><a
-                                                        href="index.html">Our
-                                                        Store</a></li>
-                                                <li><a
-                                                        href="index.html">Product
-                                                        Single</a></li>
-                                                <li><a
-                                                        href="index.html">Contact</a></li>
-                                                <li><a
-                                                        href="index.html">Thank
-                                                        You</a></li>
-                                            </ul>
-
-                                        </li>
-                                        <li class="menu-item"><a
-                                                href="#featured-books"
-                                                class="nav-link">Featured</a></li>
-                                        <li class="menu-item"><a
-                                                href="#popular-books"
-                                                class="nav-link">Popular</a></li>
-                                        <li class="menu-item"><a
-                                                href="#special-offer"
-                                                class="nav-link">Offer</a></li>
-                                        <li class="menu-item"><a
-                                                href="#latest-blog"
-                                                class="nav-link">Articles</a></li>
-                                        <li class="menu-item"><a
-                                                href="#download-app"
-                                                class="nav-link">Download
-                                                App</a></li>
-                                    </ul>
-                                    <div class="hamburger">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <!--header-wrap-->
-        <!---------------------------------------------------------------------------->
-        <div class="container">
-            <div class="main-body">
-                <!-- Breadcrumb -->
-                <nav aria-label="breadcrumb" class="main-breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a
-                                href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a
-                                href="javascript:void(0)">User</a></li>
-                        <li class="breadcrumb-item active"
-                            aria-current="page">User Profile</li>
-                    </ol>
-                </nav>
-                <!-- /Breadcrumb -->
-                <div class="row gutters-sm">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div
-                                    class="d-flex flex-column align-items-center text-center">
-                                    <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                                        alt="Admin" class="rounded-circle"
-                                        width="150">
-                                    <div class="mt-3">
-                                        <h4>John Doe</h4>
-                                        <p class="text-secondary mb-1">Full
-                                            Stack Developer</p>
-                                        <p class="text-muted font-size-sm">Bay
-                                            Area, San Francisco, CA</p>
-                                        <button
-                                            class="btn btn-primary">Follow</button>
-                                        <button
-                                            class="btn btn-outline-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mt-3">
-                            <ul class="list-group list-group-flush">
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                    <h6 class="mb-0"><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-globe mr-2 icon-inline">
-                                            <circle cx="12" cy="12"
-                                                r="10"></circle>
-                                            <line x1="2" y1="12" x2="22"
-                                                y2="12"></line>
-                                            <path
-                                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                        </svg>Website</h6>
-                                    <span
-                                        class="text-secondary">https://bootdey.com</span>
+    <div id="header-wrap">
+        <div class="top-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="icon icon-facebook"></i></a>
                                 </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                    <h6 class="mb-0"><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-github mr-2 icon-inline">
-                                            <path
-                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                        </svg>Github</h6>
-                                    <span class="text-secondary">bootdey</span>
+                                <li>
+                                    <a href="#"><i class="icon icon-twitter"></i></a>
                                 </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                    <h6 class="mb-0"><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-twitter mr-2 icon-inline text-info">
-                                            <path
-                                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                                        </svg>Twitter</h6>
-                                    <span class="text-secondary">@bootdey</span>
+                                <li>
+                                    <a href="#"><i class="icon icon-youtube-play"></i></a>
                                 </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                    <h6 class="mb-0"><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-instagram mr-2 icon-inline text-danger">
-                                            <rect x="2" y="2" width="20"
-                                                height="20" rx="5"
-                                                ry="5"></rect>
-                                            <path
-                                                d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                            <line x1="17.5" y1="6.5" x2="17.51"
-                                                y2="6.5"></line>
-                                        </svg>Instagram</h6>
-                                    <span class="text-secondary">bootdey</span>
-                                </li>
-                                <li
-                                    class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                    <h6 class="mb-0"><svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-facebook mr-2 icon-inline text-primary">
-                                            <path
-                                                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                        </svg>Facebook</h6>
-                                    <span class="text-secondary">bootdey</span>
+                                <li>
+                                    <a href="#"><i class="icon icon-behance-square"></i></a>
                                 </li>
                             </ul>
                         </div>
+                        <!--social-links-->
                     </div>
-                    <div class="col-md-8">
-                        <div class="card mb-3">
-                            <div class="container res-tabs">
-                                <!-- Abas -->
-                                <div class="cards tabs">
-                                    <input id="tab-1" type="radio"
-                                        class="tab tab-selector"
-                                        checked="checked" name="tab" />
-                                    <label for="tab-1"
-                                        class="tab tab-primary">Product</label>
-
-                                    <input id="tab-2" type="radio"
-                                        class="tab tab-selector" name="tab" />
-                                    <label for="tab-2"
-                                        class="tab tab-success">Options</label>
-
-                                    <input id="tab-3" type="radio"
-                                        class="tab tab-selector" name="tab" />
-                                    <label for="tab-3"
-                                        class="tab tab-default">Shipping</label>
-
-                                    <input id="tab-4" type="radio"
-                                        class="tab tab-selector" name="tab" />
-                                    <label for="tab-4"
-                                        class="tab tab-warning">Published</label>
-
-                                    <div class="glider"></div>
+                    <div class="col-md-6">
+                        <div class="right-element">
+                            <a href="#" class="user-account for-buy"><i
+                                    class="icon icon-user"></i><span>Account</span></a>
+                            <a href="#" class="cart for-buy"><i
+                                    class="icon icon-clipboard"></i><span>Cart:(0$)</span></a>
+                            <div class="action-menu">
+                                <div class="search-bar">
+                                    <a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+                                        <i class="icon icon-search"></i>
+                                    </a>
+                                    <form role="search" method="get" class="search-box">
+                                        <input class="search-field text search-input" placeholder="Search"
+                                            type="search">
+                                    </form>
                                 </div>
-                                <!-- Conteúdo das abas -->
-                                <section class="content">
-                                    <div class="item" id="content-1">
-                                        <h2 class="tab-title tab-primary">Sweep
-                                            + Slide Dog Toy</h2>
-                                        <p>
-                                            <span class="numit">1</span> The
-                                            Sweep + Slide is an indoor dog toy
-                                            with a sleek base designed to glide
-                                            across any floor. Not only does this
-                                            toy stimulate your dog's natural
-                                            chase instincts, but it also sweeps
-                                            away floor dust and grime with a
-                                            replaceable sweeper bottom cover.
-                                        </p>
-                                    </div>
-                                    <div class="item" id="content-2">
-                                        <h2 class="tab-title tab-success">Tab
-                                            2</h2>
-                                        <p>
-                                            <span class="numit">2</span> Lorem
-                                            ipsum dolor sit amet...
-                                        </p>
-                                    </div>
+                            </div>
+                        </div>
+                        <!--top-right-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--top-content-->
 
-                                    <div class="item" id="content-3">
-                                        <h2 class="tab-title tab-default">Tab
-                                            3</h2>
-                                        <p>
-                                            <span class="numit">3</span> Lorem
-                                            ipsum dolor sit amet...
-                                        </p>
-                                    </div>
-                                    <div class="item" id="content-4">
-                                        <div class="container">
-                                            <div class="unit w-2-3">
-                                                <div class="hero-callout">
-                                                    <div id="example_wrapper"
-                                                        style="color:#000000"
-                                                        class="dataTables_wrapper">
+        <header id="header">
+            <div class="container-fluid">
+                <div class="row">
 
-                                                        <!-- Aqui você pode adicionar filtro e controles do DataTables, se desejar -->
-                                                        <div id="example_filter"
-                                                            class="dataTables_filter"></div>
-                                                        <div
-                                                            class="dataTables_length"
-                                                            id="example_length"></div>
+                    <div class="col-md-2">
+                        <div class="main-logo">
+                            <a href="index.html"><img src="../IndexResources/images/main-logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <nav id="navbar">
+                            <div class="main-menu stellarnav">
+                                <ul class="menu-list">
+                                    <li class="menu-item active"><a href="#home">Home</a></li>
+                                    <li class="menu-item has-sub">
+                                        <a href="#pages" class="nav-link">Pages</a>
+                                        <ul>
+                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li><a href="index.html">About</a></li>
+                                            <li><a href="index.html">Styles</a></li>
+                                            <li><a href="index.html">Blog</a></li>
+                                            <li><a href="index.html">Post
+                                                    Single</a></li>
+                                            <li><a href="index.html">Our
+                                                    Store</a></li>
+                                            <li><a href="index.html">Product
+                                                    Single</a></li>
+                                            <li><a href="index.html">Contact</a></li>
+                                            <li><a href="index.html">Thank
+                                                    You</a></li>
+                                        </ul>
 
-                                                        <input type="hidden"
-                                                            name="dt_stitle"
-                                                            id="dt_stitle"
-                                                            value="Title 1" />
+                                    </li>
+                                    <li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
+                                    <li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
+                                    <li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
+                                    <li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>
+                                    <li class="menu-item"><a href="#download-app" class="nav-link">Download
+                                            App</a></li>
+                                </ul>
+                                <div class="hamburger">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--header-wrap-->
+    <!---------------------------------------------------------------------------->
+    <div class="container">
+        <div class="main-body">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="main-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                </ol>
+            </nav>
+            <!-- /Breadcrumb -->
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin"
+                                    class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>John Doe</h4>
+                                    <p class="text-secondary mb-1">Full
+                                        Stack Developer</p>
+                                    <p class="text-muted font-size-sm">Bay
+                                        Area, San Francisco, CA</p>
+                                    <button class="btn btn-primary">Follow</button>
+                                    <button class="btn btn-outline-primary">Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-globe mr-2 icon-inline">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                        </path>
+                                    </svg>Website</h6>
+                                <span class="text-secondary">https://bootdey.com</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-github mr-2 icon-inline">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>Github</h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-twitter mr-2 icon-inline text-info">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                        </path>
+                                    </svg>Twitter</h6>
+                                <span class="text-secondary">@bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-instagram mr-2 icon-inline text-danger">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>Instagram</h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-facebook mr-2 icon-inline text-primary">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg>Facebook</h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="container res-tabs">
+                            <!-- Abas -->
+                            <div class="cards tabs">
+                                <input id="tab-1" type="radio" class="tab tab-selector" checked="checked" name="tab" />
+                                <label for="tab-1" class="tab tab-primary">Product</label>
 
-                                                        <table id="example"
-                                                            class="display nowrap dataTable dtr-inline collapsed"
-                                                            style="width: 100%;"
-                                                            role="grid"
-                                                            aria-describedby="example_info">
-                                                            <thead>
-                                                                <tr role="row">
-                                                                    <th
-                                                                        class="sorting_asc"
-                                                                        tabindex="0"
-                                                                        aria-controls="example"
-                                                                        rowspan="1"
-                                                                        colspan="1"
-                                                                        style="width: 119px;"
-                                                                        aria-sort="ascending"
-                                                                        aria-label="Name: activate to sort column descending">Name</th>
-                                                                    <th
-                                                                        class="sorting"
-                                                                        tabindex="0"
-                                                                        aria-controls="example"
-                                                                        rowspan="1"
-                                                                        colspan="1"
-                                                                        style="width: 100px;"
-                                                                        aria-label="Address: activate to sort column ascending">Address</th>
-                                                                    <th
-                                                                        class="sorting"
-                                                                        tabindex="0"
-                                                                        aria-controls="example"
-                                                                        rowspan="1"
-                                                                        colspan="1"
-                                                                        style="width: 50px;"
-                                                                        aria-label="City: activate to sort column ascending">City</th>
-                                                                    <th
-                                                                        class="sorting"
-                                                                        tabindex="0"
-                                                                        aria-controls="example"
-                                                                        rowspan="1"
-                                                                        colspan="1"
-                                                                        style="width: 30px;"
-                                                                        aria-label="State: activate to sort column ascending">State</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="odd">
-                                                                    <td
-                                                                        style="color:#0000FF"
-                                                                        tabindex="0"
-                                                                        class="sorting_1">Airi
-                                                                        Satou</td>
-                                                                    <td
-                                                                        style="color:#000000">975
-                                                                        South
-                                                                        Central
-                                                                        Ave</td>
-                                                                    <td
-                                                                        style="color:#000000">California</td>
-                                                                    <td
-                                                                        style="color:#000000">CA</td>
-                                                                </tr>
-                                                                <tr
-                                                                    class="even">
-                                                                    <td
-                                                                        style="color:#0000FF">Angelica
-                                                                        Ramos</td>
-                                                                    <td
-                                                                        style="color:#000000">912
-                                                                        North
-                                                                        Street</td>
-                                                                    <td
-                                                                        style="color:#000000">New
-                                                                        York</td>
-                                                                    <td
-                                                                        style="color:#000000">NY</td>
-                                                                </tr>
-                                                                <tr class="odd">
-                                                                    <td
-                                                                        style="color:#0000FF">Ashton
-                                                                        Cox</td>
-                                                                    <td
-                                                                        style="color:#000000">580
-                                                                        Main
-                                                                        Blvd</td>
-                                                                    <td
-                                                                        style="color:#000000">Los
-                                                                        Angeles</td>
-                                                                    <td
-                                                                        style="color:#000000">CA</td>
-                                                                </tr>
-                                                                <!-- Continue adicionando linhas conforme necessário -->
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                <input id="tab-2" type="radio" class="tab tab-selector" name="tab" />
+                                <label for="tab-2" class="tab tab-success">Options</label>
+
+                                <input id="tab-3" type="radio" class="tab tab-selector" name="tab" />
+                                <label for="tab-3" class="tab tab-default">Shipping</label>
+
+                                <input id="tab-4" type="radio" class="tab tab-selector" name="tab" />
+                                <label for="tab-4" class="tab tab-warning">Published</label>
+
+                                <div class="glider"></div>
+                            </div>
+                            <!-- Conteúdo das abas -->
+                            <section class="content">
+                                <div class="item" id="content-1">
+                                    <h2 class="tab-title tab-primary">Sweep
+                                        + Slide Dog Toy</h2>
+                                    <p>
+                                        <span class="numit">1</span> The
+                                        Sweep + Slide is an indoor dog toy
+                                        with a sleek base designed to glide
+                                        across any floor. Not only does this
+                                        toy stimulate your dog's natural
+                                        chase instincts, but it also sweeps
+                                        away floor dust and grime with a
+                                        replaceable sweeper bottom cover.
+                                    </p>
+                                </div>
+                                <div class="item" id="content-2">
+                                    <h2 class="tab-title tab-success">Tab
+                                        2</h2>
+                                    <p>
+                                        <span class="numit">2</span> Lorem
+                                        ipsum dolor sit amet...
+                                    </p>
+                                </div>
+
+                                <div class="item" id="content-3">
+                                    <h2 class="tab-title tab-default">Tab
+                                        3</h2>
+                                    <p>
+                                        <span class="numit">3</span> Lorem
+                                        ipsum dolor sit amet...
+                                    </p>
+                                </div>
+                                <div class="item" id="content-4">
+                                    <div class="container">
+                                        <div class="unit w-2-3">
+                                            <div class="hero-callout">
+                                                <div id="example_wrapper" style="color:#000000"
+                                                    class="dataTables_wrapper">
+
+                                                    <!-- Aqui você pode adicionar filtro e controles do DataTables, se desejar -->
+                                                    <div id="example_filter" class="dataTables_filter"></div>
+                                                    <div class="dataTables_length" id="example_length"></div>
+
+                                                    <input type="hidden" name="dt_stitle" id="dt_stitle"
+                                                        value="Title 1" />
+
+                                                    <table id="example"
+                                                        class="display nowrap dataTable dtr-inline collapsed"
+                                                        style="width: 100%;" role="grid"
+                                                        aria-describedby="example_info">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sorting_asc" tabindex="0"
+                                                                    aria-controls="example" rowspan="1" colspan="1"
+                                                                    style="width: 119px;" aria-sort="ascending"
+                                                                    aria-label="Name: activate to sort column descending">
+                                                                    Name</th>
+                                                                <th class="sorting" tabindex="0" aria-controls="example"
+                                                                    rowspan="1" colspan="1" style="width: 100px;"
+                                                                    aria-label="Address: activate to sort column ascending">
+                                                                    Address</th>
+                                                                <th class="sorting" tabindex="0" aria-controls="example"
+                                                                    rowspan="1" colspan="1" style="width: 50px;"
+                                                                    aria-label="City: activate to sort column ascending">
+                                                                    City</th>
+                                                                <th class="sorting" tabindex="0" aria-controls="example"
+                                                                    rowspan="1" colspan="1" style="width: 30px;"
+                                                                    aria-label="State: activate to sort column ascending">
+                                                                    State</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd">
+                                                                <td style="color:#0000FF" tabindex="0"
+                                                                    class="sorting_1">Airi
+                                                                    Satou</td>
+                                                                <td style="color:#000000">975
+                                                                    South
+                                                                    Central
+                                                                    Ave</td>
+                                                                <td style="color:#000000">California</td>
+                                                                <td style="color:#000000">CA</td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td style="color:#0000FF">Angelica
+                                                                    Ramos</td>
+                                                                <td style="color:#000000">912
+                                                                    North
+                                                                    Street</td>
+                                                                <td style="color:#000000">New
+                                                                    York</td>
+                                                                <td style="color:#000000">NY</td>
+                                                            </tr>
+                                                            <tr class="odd">
+                                                                <td style="color:#0000FF">Ashton
+                                                                    Cox</td>
+                                                                <td style="color:#000000">580
+                                                                    Main
+                                                                    Blvd</td>
+                                                                <td style="color:#000000">Los
+                                                                    Angeles</td>
+                                                                <td style="color:#000000">CA</td>
+                                                            </tr>
+                                                            <!-- Continue adicionando linhas conforme necessário -->
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-                            </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!---------------------------------------------------------------------------->
-        <script src="../ClienteResources/Home/Info.js"></script>
-        <script src="../ClienteResources/Home/HomeTabs.js"></script>
-        <script src="../ClienteResources/Cadastro/CEP.js"></script>
+    </div>
+    <!---------------------------------------------------------------------------->
+    <script src="../ClienteResources/Home/Info.js"></script>
+    <script src="../ClienteResources/Home/HomeTabs.js"></script>
+    <script src="../ClienteResources/Cadastro/CEP.js"></script>
 
-        <script src="../IndexResources/js/jquery-1.11.0.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
-        <script src="../IndexResources/js/plugins.js"></script>
-        <script src="../IndexResources/js/script.js"></script>
-    </body>
+    <script src="../IndexResources/js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="../IndexResources/js/plugins.js"></script>
+    <script src="../IndexResources/js/script.js"></script>
+</body>
+
 </html>

@@ -311,3 +311,181 @@ span.numit {
   color: aliceblue;
   text-shadow: 0.5pt 0.5pt 0.5pt #2d3748;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+      <div class="main-body">
+         <header>Signup Form</header>
+         <div class="progress-bar">
+            <div class="step">
+               <p>Basic Info</p>
+               <div class="bullet"><span>1</span></div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>Address Info</p>
+               <div class="bullet"><span>2</span></div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>Card Info</p>
+               <div class="bullet"><span>3</span></div>
+               <div class="check fas fa-check"></div>
+            </div>
+         </div>
+
+         <div class="form-outer">
+            <form th:action="@{/usu/submitCliForm}" th:object="${formData}" method="post">
+               <!-- Basic Info Page -->
+               <div class="page slide-page">
+                  <div class="title">Basic Info:</div>
+                  <div class="field grid">
+                     <div>
+                        <div class="label">Nome</div>
+                        <input type="text" id="nome" th:field="*{nome}" placeholder="Insira seu nome" required />
+                     </div>
+                     <div>
+                        <div class="label">Data de Nascimento</div>
+                        <input type="date" id="datanasc" th:field="*{datanasc}"
+                           placeholder="Insira sua data de nascimento" required />
+                     </div>
+                  </div>
+
+                  <div class="field grid">
+                     <div>
+                        <div class="label">E-mail</div>
+                        <input type="email" id="email" th:field="*{email}" placeholder="Insira seu e-mail" required />
+                     </div>
+                     <div>
+                        <div class="label">Senha</div>
+                        <input type="password" id="senha" th:field="*{senha}" placeholder="Crie uma senha" required />
+                     </div>
+                  </div>
+                  <div class="field">
+                     <div class="label">Gênero</div>
+                     <select id="gen" th:field="*{gen}" required>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outro</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <button type="button" class="next next">Next</button>
+                  </div>
+               </div>
+
+               <!-- Address Info Page -->
+               <div class="page">
+                  <div class="title">Address Info:</div>
+
+                  <div class="field grid2">
+                     <div>
+                        <div class="label">País</div>
+                        <input type="text" id="pais" th:field="*{pais}" required />
+                     </div>
+                     <div>
+                        <div class="label">CEP</div>
+                        <input type="text" id="cep" th:field="*{cep}" required />
+                     </div>
+                     <div>
+                        <div class="label">Estado</div>
+                        <input type="text" id="estado" th:field="*{estado}" required />
+                     </div>
+                  </div>
+
+                  <div class="field grid2">
+                     <div>
+                        <div class="label">Cidade</div>
+                        <input type="text" id="cidade" th:field="*{cidade}" required />
+                     </div>
+                     <div>
+                        <div class="label">Bairro</div>
+                        <input type="text" id="bairro" th:field="*{bairro}" required />
+                     </div>
+                     <div>
+                        <div class="label">Rua</div>
+                        <input type="text" id="rua" th:field="*{rua}" required />
+                     </div>
+                  </div>
+
+                  <div class="field grid2">
+                     <div>
+                        <div class="label">Número</div>
+                        <input type="number" id="numero" th:field="*{numero}" required />
+                     </div>
+                     <div>
+                        <div class="label">Complemento</div>
+                        <input type="text" id="complemento" th:field="*{complemento}" />
+                     </div>
+                     <div>
+                        <div class="label">Tipo de Residência</div>
+                        <input type="text" id="tipo_residencia" th:field="*{tipo_residencia}" required />
+                     </div>
+
+                  </div>
+
+                  <div class="field btns">
+                     <button type="button" class="prev prev">Previous</button>
+                     <button type="button" class="next next">Next</button>
+                  </div>
+               </div>
+
+               <!-- Card Info Page -->
+               <div class="page">
+                  <div class="title">Card Info:</div>
+                  <div class="field grid">
+                     <div>
+                        <div class="label">Número do Cartão</div>
+                        <input type="number" id="number_cartao" th:field="*{number_cartao}" required />
+                     </div>
+                     <div>
+                        <div class="label">Bandeira</div>
+                        <input type="text" id="bandeira" th:field="*{bandeira}" required />
+                     </div>
+                  </div>
+                  <div class="field grid">
+                     <div>
+                        <div class="label">CV</div>
+                        <input type="number" id="cv" th:field="*{cv}" required />
+                     </div>
+                     <div>
+                        <div class="label">Cartão Preferencial</div>
+                        <select id="preferencial" th:field="*{preferencial}" required>
+                           <option value="true">Sim</option>
+                           <option value="false">Não</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="field grid2">
+                     <div>
+
+                     </div>
+                     <div>
+
+                     </div>
+                     <div>
+
+                     </div>
+
+                  </div>
+                  <div class="field btns">
+                     <button type="button" class="prev">Previous</button>
+                     <button type="submit" class="submit">Submit</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>

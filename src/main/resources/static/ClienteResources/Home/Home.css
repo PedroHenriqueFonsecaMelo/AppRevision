@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap");
 
 .card.mb-3 {
+
   .container,
   .container * {
     all: unset;
@@ -53,7 +54,7 @@
         }
       }
 
-      input:checked + label {
+      input:checked+label {
         color: deepskyblue;
       }
 
@@ -63,28 +64,26 @@
         height: 3px;
         width: 25%;
         border-radius: 3px 3px 0 0;
-        background: linear-gradient(
-          113deg,
-          hsl(260deg 100% 64%) 0%,
-          hsl(190deg 100% 55%) 100%
-        );
+        background: linear-gradient(113deg,
+            hsl(260deg 100% 64%) 0%,
+            hsl(190deg 100% 55%) 100%);
         transition: left 0.3s ease;
         z-index: 1;
       }
 
-      #tab-1:checked ~ .glider {
+      #tab-1:checked~.glider {
         left: 0%;
       }
 
-      #tab-2:checked ~ .glider {
+      #tab-2:checked~.glider {
         left: 25%;
       }
 
-      #tab-3:checked ~ .glider {
+      #tab-3:checked~.glider {
         left: 50%;
       }
 
-      #tab-4:checked ~ .glider {
+      #tab-4:checked~.glider {
         left: 75%;
       }
     }
@@ -110,10 +109,10 @@
       }
 
       /* Seletores específicos para mostrar a aba correta */
-      #tab-1:checked ~ & #content-1,
-      #tab-2:checked ~ & #content-2,
-      #tab-3:checked ~ & #content-3,
-      #tab-4:checked ~ & #content-4 {
+      #tab-1:checked~& #content-1,
+      #tab-2:checked~& #content-2,
+      #tab-3:checked~& #content-3,
+      #tab-4:checked~& #content-4 {
         display: block;
       }
 
@@ -140,7 +139,8 @@
         font-family: "Manrope" !important;
         font-weight: 800 !important;
 
-        color: transparent; /* Isso faz com que o gradiente seja visível */
+        color: transparent;
+        /* Isso faz com que o gradiente seja visível */
       }
 
       p {
@@ -167,19 +167,26 @@
         margin-left: -2px;
         padding: 0;
       }
+
       #grid {
         width: 100%;
         min-height: 500px;
       }
+
       div#content-4 {
         background-color: white;
       }
+
       #table-wrapper {
-        all: initial; /* blocking inheritance for all properties */
+        all: initial;
+        /* blocking inheritance for all properties */
       }
+
       #table-wrapper * {
-        all: unset; /* allowing inheritance within #mydiv */
+        all: unset;
+        /* allowing inheritance within #mydiv */
       }
+
       .tabcontent {
         display: none;
         padding: 6px 12px;

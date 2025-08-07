@@ -1,7 +1,6 @@
 package app.revision.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +20,7 @@ import jakarta.transaction.Transactional;
 @Controller
 @RequestMapping("/usu")
 public class ClienteController {
+
     @Autowired
     private ClienteRepository clienteRepository; // Assumindo que você tem um repositório para o Cliente
 
@@ -48,7 +48,7 @@ public class ClienteController {
 
     @Transactional
     @PostMapping("/submitCliForm")
-    public ResponseEntity<String> submitForm(@ModelAttribute ClienteFormData formData) {
+    public String submitForm(@ModelAttribute ClienteFormData formData) {
 
         // Cria Cliente
         Cliente cliente = new Cliente(
@@ -63,7 +63,7 @@ public class ClienteController {
 
         // Cria Endereco
         Endereco endereco = new Endereco(
-                cliente, 
+                cliente,
                 formData.getPais(),
                 formData.getCep(),
                 formData.getEstado(),
@@ -73,7 +73,6 @@ public class ClienteController {
                 formData.getNumero(),
                 formData.getComplemento(),
                 formData.getTipo_residencia());
-
 
         // Salvar Endereço no banco de dados
         enderecoRepository.save(endereco);
@@ -89,6 +88,6 @@ public class ClienteController {
         // Salvar Cartão no banco de dados
         cartaoRepository.save(cartao);
 
-        return ResponseEntity.ok("Cliente " + cliente.getNome() + " e seus dados associados foram salvos com sucesso!");
+        return "ClienteHTML/UserHome";
     }
 }
