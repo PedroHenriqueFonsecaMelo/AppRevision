@@ -22,7 +22,7 @@ import jakarta.transaction.Transactional;
 public class ClienteController {
 
     @Autowired
-    private ClienteRepository clienteRepository; // Assumindo que você tem um repositório para o Cliente
+    private ClienteRepository clienteRepository; // Repositório de Cliente
 
     @Autowired
     private EnderecoRepository enderecoRepository; // Repositório de Endereço
@@ -31,13 +31,19 @@ public class ClienteController {
     private CartaoRepository cartaoRepository; // Repositório de Cartão
 
     @GetMapping("/signup")
-    public String showForm(Model model) {
+    public String ShowForm(Model model) {
 
         ClienteFormData formData = new ClienteFormData();
 
         model.addAttribute("formData", formData);
 
         return "ClienteHTML/SingUp";
+    }
+
+    @GetMapping("/login")
+    public String Login(Model model) {
+
+        return "ClienteHTML/Login";
     }
 
     @GetMapping("/home")
