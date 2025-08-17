@@ -146,4 +146,20 @@ public class Cliente {
         return sb.toString();
     }
 
+    public void removerEndereco(Endereco endereco) {
+        enderecos.remove(endereco);
+    }
+
+    public void adicionarEndereco(Endereco endereco) {
+        enderecos.add(endereco);
+    }
+
+    public void removerCartao(Cartao cartao) {
+        cartoes.remove(cartao);
+    }
+
+    public void adicionarCartao(Cartao cartao) {
+        cartoes.add(cartao);
+    }
+
 }

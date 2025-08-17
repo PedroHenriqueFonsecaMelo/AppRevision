@@ -1,4 +1,4 @@
-package app.revision.controllers;
+package app.revision.controllers_teste;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

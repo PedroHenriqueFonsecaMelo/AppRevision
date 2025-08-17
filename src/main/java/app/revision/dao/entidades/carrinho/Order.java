@@ -3,6 +3,7 @@ package app.revision.dao.entidades.carrinho;
 import java.util.HashSet;
 import java.util.Set;
 
+import app.revision.dao.entidades.usuario.Cartao;
 import app.revision.dao.entidades.usuario.Cliente;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -23,33 +24,52 @@ public class Order {
     @Column(name = "order_id")
     private int id;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private Set<OrderDetails> details = new HashSet<>();
+    @OneToMany(mappedBy = "order_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<OrderDetails> detalhes = new HashSet<>();
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private Set<OrderCartoes> pagamento = new HashSet<>();
+    @OneToMany(mappedBy = "order_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<OrderCartoes> pagamentos = new HashSet<>();
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "cliente_id", nullable = false)
     private Cliente cliente;
 
-    @Column
+    @Column(nullable = false)
     private double valorTotal;
 
-    @Column(length = 100)
+    @Column(length = 100, nullable = false)
     private String status;
 
-    @Column(length = 100)
-    private String enderecoentrega;
+    @Column(length = 255)
+    private String enderecoEntrega;
 
     public Order() {
     }
 
-    public Order(Cliente cliente, double valorTotal, String status, String enderecoentrega) {
+    public Order(Cliente cliente, double valorTotal, String status, String enderecoEntrega) {
         this.cliente = cliente;
         this.valorTotal = valorTotal;
         this.status = status;
-        this.enderecoentrega = enderecoentrega;
+        this.enderecoEntrega = enderecoEntrega;
+    }
+
+    public void addDetalhe(OrderDetails detalhe) {
+        detalhes.add(detalhe);
+        detalhe.setOrder(this);
+    }
+
+    public void addPagamento(OrderCartoes pagamento) {
+        pagamentos.add(pagamento);
+        pagamento.setOrder_id(this);
+    }
+
+    // Getters e Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Cliente getCliente() {
@@ -76,36 +96,43 @@ public class Order {
         this.status = status;
     }
 
-    public String getEnderecoentrega() {
-        return enderecoentrega;
+    public String getEnderecoEntrega() {
+        return enderecoEntrega;
     }
 
-    public void setEnderecoentrega(String enderecoentrega) {
-        this.enderecoentrega = enderecoentrega;
+    public void setEnderecoEntrega(String enderecoEntrega) {
+        this.enderecoEntrega = enderecoEntrega;
     }
 
-    public int getId() {
-        return id;
+    public Set<OrderDetails> getDetalhes() {
+        return detalhes;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDetalhes(Set<OrderDetails> detalhes) {
+        this.detalhes = detalhes;
     }
 
-    public Set<OrderDetails> getDetails() {
-        return details;
+    public Set<OrderCartoes> getPagamentos() {
+        return pagamentos;
     }
 
-    public void setDetails(Set<OrderDetails> details) {
-        this.details = details;
+    public void setPagamentos(Set<OrderCartoes> pagamentos) {
+        this.pagamentos = pagamentos;
     }
 
-    public Set<OrderCartoes> getPagamento() {
-        return pagamento;
+    public void adicionarPagamento(Cartao cartao, int vezes) {
+        OrderCartoes pagamento = new OrderCartoes();
+        pagamento.setOrder_id(this); // link com o pedido
+        pagamento.setCartao(cartao); // define o cartão
+        pagamento.setParcelas(vezes); // define parcelas
+        this.pagamentos.add(pagamento); // adiciona ao conjunto do pedido
     }
 
-    public void setPagamento(Set<OrderCartoes> pagamento) {
-        this.pagamento = pagamento;
+    @Override
+    public String toString() {
+        return "Order [id=" + id + ", cliente=" + cliente.getId() +
+                ", valorTotal=" + valorTotal +
+                ", status=" + status +
+                ", enderecoEntrega=" + enderecoEntrega + "]";
     }
-
 }

@@ -63,6 +63,10 @@ public class Endereco {
         this.tipo_residencia = tipo_residencia;
     }
 
+    public Endereco() {
+        //TODO Auto-generated constructor stub
+    }
+
     public Cliente getCliente() {
         return cliente;
     }

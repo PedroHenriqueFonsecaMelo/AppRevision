@@ -35,3 +35,4 @@ build/
 /.vscode
 /node
 /.lens
+/src/main/resources/effective-pom.xml.txt

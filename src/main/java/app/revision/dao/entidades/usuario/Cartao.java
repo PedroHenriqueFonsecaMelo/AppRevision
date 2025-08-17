@@ -41,7 +41,7 @@ public class Cartao {
     @Column
     private Boolean preferencial;
 
-    @OneToMany(mappedBy = "cartoes")
+    @OneToMany(mappedBy = "cartao_id")
     private Set<OrderCartoes> order_cartao = new HashSet<OrderCartoes>();
 
     public Cartao(Cliente cliente, long number_cartao, String bandeira, int cv,
@@ -52,6 +52,10 @@ public class Cartao {
         this.cliente = cliente;
         this.cv = cv;
         this.preferencial = preferencial;
+    }
+
+    public Cartao() {
+        //TODO Auto-generated constructor stub
     }
 
     public long getNumber_cartao() {

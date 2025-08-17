@@ -10,5 +10,4 @@ public class RevisionApplication {
 
 		SpringApplication.run(RevisionApplication.class, args);
 	}
-
 }
